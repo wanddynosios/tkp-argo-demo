@@ -1,0 +1,18 @@
+---
+apiVersion: application.giantswarm.io/v1alpha1
+kind: Catalog
+metadata:
+  labels:
+    application.giantswarm.io/catalog-visibility: public
+  name: tkp-argo-demo
+  namespace: default
+spec:
+  description: Demo Catalog for ArgoCD
+  logoURL: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+  repositories:
+  - URL: https://argoproj.github.io/argo-helm
+    type: helm
+  storage:
+    URL: https://argoproj.github.io/argo-helm
+    type: helm
+  title: tkp-argo-demo
