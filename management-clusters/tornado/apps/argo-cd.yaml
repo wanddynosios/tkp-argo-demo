@@ -1,0 +1,16 @@
+---
+apiVersion: application.giantswarm.io/v1alpha1
+kind: App
+metadata:
+  labels:
+    app-operator.giantswarm.io/version: 0.0.0
+  name: argo-cd
+  namespace: org-shared-clusters
+spec:
+  catalog: tkp-argo-demo
+  catalogNamespace: default
+  kubeConfig:
+    inCluster: true
+  name: argo-cd
+  namespace: default
+  version: 5.5.6
