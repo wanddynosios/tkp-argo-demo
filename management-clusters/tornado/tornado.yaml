@@ -4,7 +4,7 @@ metadata:
   name: tornado-gitops  # TODO: change "mc-name" to your Management Cluster name
   namespace: default
 spec:
-  interval: 1m0s
+  interval: 30s
   path: ./management-clusters/tornado
   prune: true
   serviceAccountName: automation
