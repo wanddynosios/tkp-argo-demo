@@ -12,5 +12,5 @@ spec:
   kubeConfig:
     inCluster: true
   name: argo-cd
-  namespace: default
+  namespace: org-shared-clusters
   version: 5.5.6
