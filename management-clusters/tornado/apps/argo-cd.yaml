@@ -14,3 +14,7 @@ spec:
   name: argo-cd
   namespace: org-shared-clusters
   version: 5.5.6
+  userConfig:
+    configMap:
+      name: argo-cd-user-values
+      namespace: org-shared-clusters
